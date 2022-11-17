@@ -613,13 +613,25 @@
             </div>
             <label for="comment" name="comment-user" class="modal-form-label">Коментар</label>
             <div class="modal-form-div">
-              <input
-                type="textarea"
+              <textarea
                 name="comment"
                 id="comment"
+                rows="6"
                 class="modal-form-input textarea"
                 placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div role="group" class="checkbox-privacy">
+              <input
+                type="checkbox"
+                name="form-checkbox"
+                id="form-checkbox"
+                class="modal-form-checkbox"
               />
+              <label for="form-checkbox" name="privacy" class="privacy"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="privacy-link link">Умови договору</a></label
+              >
             </div>
             <button type="submit" class="modal-form-button button">Відправити</button>
           </div>
