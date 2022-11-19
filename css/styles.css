@@ -763,8 +763,8 @@ button {
 }
 
 .modal-title {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -787,20 +787,32 @@ button {
   top: 50%;
   left: 21px;
   transform: translate(-50%, -50%);
+
+  transition: fill var(--anim);
 }
 
 .modal-form-input {
-  margin-top: 4px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
 
-  transition: border-color var(--anim);
+  outline-offset: -1px;
+  outline: 1px solid transparent;
+  transition: outline-color var(--anim);
 }
 
 .modal-form-input:focus {
-  border-color: var(--hover-text-color);
+  outline-color: var(--hover-text-color);
+}
+
+.modal-form-input:focus + .modal-icon {
+  fill: var(--hover-text-color);
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-form-label,
@@ -814,6 +826,7 @@ button {
 }
 
 .textarea {
+  display: block;
   padding: 12px 16px;
   resize: none;
 }
@@ -833,6 +846,25 @@ button {
 
 .modal-form-checkbox {
   margin-right: 8.38px;
+  appearance: none;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+
+  outline-offset: -2px;
+  outline: 2px solid transparent;
+  transition: outline-color var(--anim), background-color var(--anim), background-size var(--anim);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+
+.modal-form-checkbox:checked {
+  outline-color: var(--hover-text-color);
+  background-color: var(--hover-text-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-size: 11px 8px;
 }
 
 .privacy {
