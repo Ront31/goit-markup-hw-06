@@ -564,7 +564,7 @@
             </li>
           </ul>
         </div>
-        <form name="join" class="from-join">
+        <form name="join" class="form-join">
           <div role="group" aria-labelledby="join-us" class="join-form">
             <label for="join-us" class="join-label">Підпишіться на розсилку</label>
             <div class="join-subform">
@@ -589,52 +589,50 @@
         </button>
         <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
         <form name="modal-form" class="modal-form">
-          <div role="group" class="modal-form-group">
-            <label for="name" name="name-user" class="modal-form-label">Ім'я</label>
-            <div class="modal-form-div">
-              <input type="text" name="name" id="name" class="modal-form-input" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons/symbol-defs.svg#icon-name"></use>
-              </svg>
-            </div>
-            <label for="tel" name="tel-user" class="modal-form-label">Телефон</label>
-            <div class="modal-form-div">
-              <input type="tel" name="tel" id="tel" class="modal-form-input" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </div>
-            <label for="mail" name="mail-user" class="modal-form-label">Пошта</label>
-            <div class="modal-form-div">
-              <input type="email" name="mail" id="mail" class="modal-form-input" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </div>
-            <label for="comment" name="comment-user" class="modal-form-label">Коментар</label>
-            <div class="modal-form-div">
-              <textarea
-                name="comment"
-                id="comment"
-                rows="6"
-                class="modal-form-input textarea"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
-            <div role="group" class="checkbox-privacy">
-              <input
-                type="checkbox"
-                name="form-checkbox"
-                id="form-checkbox"
-                class="modal-form-checkbox"
-              />
-              <label for="form-checkbox" name="privacy" class="privacy"
-                >Погоджуюся з розсилкою та приймаю
-                <a class="privacy-link link">Умови договору</a></label
-              >
-            </div>
-            <button type="submit" class="modal-form-button button">Відправити</button>
+          <label for="name" name="name-user" class="modal-form-label">Ім'я</label>
+          <div class="modal-form-div">
+            <input type="text" name="name" id="name" class="modal-form-input" />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-name"></use>
+            </svg>
           </div>
+          <label for="tel" name="tel-user" class="modal-form-label">Телефон</label>
+          <div class="modal-form-div">
+            <input type="tel" name="tel" id="tel" class="modal-form-input" />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="mail" name="mail-user" class="modal-form-label">Пошта</label>
+          <div class="modal-form-div">
+            <input type="email" name="mail" id="mail" class="modal-form-input" />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="comment" name="comment-user" class="modal-form-label">Коментар</label>
+          <div class="modal-form-div">
+            <textarea
+              name="comment"
+              id="comment"
+              rows="6"
+              class="modal-form-input textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div role="group" class="checkbox-privacy">
+            <input
+              type="checkbox"
+              name="form-checkbox"
+              id="form-checkbox"
+              class="modal-form-checkbox"
+            />
+            <label for="form-checkbox" name="privacy" class="privacy"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="privacy-link link">Умови договору</a></label
+            >
+          </div>
+          <button type="submit" class="modal-form-button button">Відправити</button>
         </form>
       </div>
     </div>
